@@ -51,7 +51,54 @@ Tugas ini merupakan simulasi Ujian Tengah Semester yaitu membuat aplikasi `CRUD`
 
 11.  Berikut adalah source code dari Update.
 
-    ![Screenshot 2024-10-08 134933](https://github.com/user-attachments/assets/929fdfda-9f96-43bc-9f67-e7fce0c69da4)
+    private void btnUpdateActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        String KodeMK, SKSbaru, NamaMKbaru, SemesterAjarbaru;
+        String hehe = txtKodeMK.getText();
+        String hoho = txtSKS.getText();
+        String huhu = txtNamaMK.getText();
+        String hihi = txtSmt.getText();
+
+        if (hehe.trim().isEmpty() && hoho.trim().isEmpty() && huhu.trim().isEmpty() && hihi.trim().isEmpty()) {
+            JOptionPane.showMessageDialog(this, "masukkan dulu data Mata Kuliah yang ingin diupdate! ");
+        } else if (hehe.trim().isEmpty()) {
+            JOptionPane.showMessageDialog(this, "isi Kode Mata Kuliah dulu yaa! ");
+        } else if (hoho.trim().isEmpty()) {
+            JOptionPane.showMessageDialog(this, "isi SKS yang ingin diupdate!");
+        } else if (huhu.trim().isEmpty()) {
+            JOptionPane.showMessageDialog(this, "isi Nama Mata Kuliah dulu yang ingin diupdate!");
+        } else if (hihi.trim().isEmpty()) {
+            JOptionPane.showMessageDialog(this, "isi Semester Ajaran dulu yang ingin diupdate!");
+        } else {
+            try {
+                Class.forName(driver);
+                String sql = "UPDATE MataKuliah SET SKS = ?, NamaMk = ?, SemesterAjar = ? WHERE KodeMK = ?";
+                conn = DriverManager.getConnection(koneksi, user, password);
+                pstmt = conn.prepareStatement(sql);
+
+                KodeMK = txtKodeMK.getText();
+                SKSbaru = txtSKS.getText();
+                NamaMKbaru = txtNamaMK.getText();
+                SemesterAjarbaru = txtSmt.getText();
+
+                pstmt.setLong(1, Long.parseLong(SKSbaru));
+                pstmt.setString(2, NamaMKbaru);
+                pstmt.setLong(3, Long.parseLong(SemesterAjarbaru));
+                pstmt.setString(4, KodeMK);
+                
+                int rowsAffected = pstmt.executeUpdate();
+                if (rowsAffected > 0) {
+                    JOptionPane.showMessageDialog(null, "data berhasil diupdate!");
+                    pstmt.close();
+                    conn.close();
+                    bersih();
+                } else {
+                    JOptionPane.showMessageDialog(null, "data tidak ditemukan");
+                }
+            } catch (ClassNotFoundException | SQLException ex) {
+            }
+            tampil();
+        }                                           
+    }                 
      dalam update kita bisa mengeklik data pada tabel saja, lalu data akan otomatis ke isi pada kolom jawaban. Kemudian kita akan dengan mudah mengganti apa yang perlu diganti, tapi tidak untuk PRIMARY KEY.
 
 12. Berikut adalah source code dari Delete.
@@ -65,7 +112,13 @@ Tugas ini merupakan simulasi Ujian Tengah Semester yaitu membuat aplikasi `CRUD`
 
 14.  Berikut adalah source code dari tbTabelMouseClicked.
 
-    ![image](https://github.com/user-attachments/assets/0bae5b89-4a84-4440-b412-2670e04d1722)
+    private void tbTabelMKMouseClicked(java.awt.event.MouseEvent evt) {                                       
+        int row = tbTabelMK.getSelectedRow();
+        txtKodeMK.setText(tbTabelMK.getValueAt(row, 0).toString());
+        txtSKS.setText(tbTabelMK.getValueAt(row, 1).toString());
+        txtNamaMK.setText(tbTabelMK.getValueAt(row, 2).toString());
+        txtSmt.setText(tbTabelMK.getValueAt(row, 3).toString());
+    }   
 
 15. Berikut adalah source code dari Clear.
 
