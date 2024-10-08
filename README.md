@@ -65,7 +65,7 @@ Tugas ini merupakan simulasi Ujian Tengah Semester yaitu membuat aplikasi `CRUD`
 
 14.  Berikut adalah source code dari tbTabelMouseClicked.
 
-    ![Screenshot 2024-10-08 135146](https://github.com/user-attachments/assets/0d79420a-54b8-4d17-8485-9aedbe3aeeb2)
+    ![Screenshot 2024-10-08 135146](https://github.com/user-attachments/assets/79f30534-a51e-48ee-84f5-448d615a5ee8)
 
 15. Berikut adalah source code dari Clear.
 
