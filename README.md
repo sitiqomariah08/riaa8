@@ -51,7 +51,7 @@ Tugas ini merupakan simulasi Ujian Tengah Semester yaitu membuat aplikasi `CRUD`
 
 11.  Berikut adalah source code dari Update.
 
-    ![image](https://github.com/user-attachments/assets/29157dfe-b53c-409c-bbad-150128d1db65)
+    ![Screenshot 2024-10-08 134933](https://github.com/user-attachments/assets/929fdfda-9f96-43bc-9f67-e7fce0c69da4)
      dalam update kita bisa mengeklik data pada tabel saja, lalu data akan otomatis ke isi pada kolom jawaban. Kemudian kita akan dengan mudah mengganti apa yang perlu diganti, tapi tidak untuk PRIMARY KEY.
 
 12. Berikut adalah source code dari Delete.
@@ -65,7 +65,7 @@ Tugas ini merupakan simulasi Ujian Tengah Semester yaitu membuat aplikasi `CRUD`
 
 14.  Berikut adalah source code dari tbTabelMouseClicked.
 
-    ![image](https://github.com/user-attachments/assets/1b7d6b32-0f00-44aa-b384-44465e29e773)
+    ![Screenshot 2024-10-08 135146](https://github.com/user-attachments/assets/0d79420a-54b8-4d17-8485-9aedbe3aeeb2)
 
 15. Berikut adalah source code dari Clear.
 
