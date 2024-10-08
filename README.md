@@ -56,7 +56,7 @@ Tugas ini merupakan simulasi Ujian Tengah Semester yaitu membuat aplikasi `CRUD`
 
 12. Berikut adalah source code dari Delete.
 
-    ![image](https://github.com/user-attachments/assets/2555d762-d82a-4ecf-8a5a-8e45b5b64fe6)
+    ![image](https://github.com/user-attachments/assets/17460774-9ee6-48dc-b314-5437e49a781b)
     dalam delete ini akan menghapus data yang kita inginkan dan memberikan konfirmasi saat akan menghapus data.
 
 13. Berikut adalah source code dari Tampil/Select.
@@ -65,7 +65,7 @@ Tugas ini merupakan simulasi Ujian Tengah Semester yaitu membuat aplikasi `CRUD`
 
 14.  Berikut adalah source code dari tbTabelMouseClicked.
 
-    ![Screenshot 2024-10-08 135146](https://github.com/user-attachments/assets/79f30534-a51e-48ee-84f5-448d615a5ee8)
+    ![image](https://github.com/user-attachments/assets/0bae5b89-4a84-4440-b412-2670e04d1722)
 
 15. Berikut adalah source code dari Clear.
 
